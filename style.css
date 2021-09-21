@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    font-family: "Gothic A1", sans-serif;
+}
+
+.header-section {
+    background-image: linear-gradient(to bottom right, #cf0063, #350e47);
+    padding: 2rem 7.5rem;
+    min-height: 100vh;
+    transition: 0.3s ease-in;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.header ul span {
+    font-size: 2rem;
+    display: none;
+}
+.header ul li {
+    margin: 0 1rem;
+    font-size: 1.1rem;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header img {
+    width: 120px;
+    height: 42.53px;
+}
+
+.hero-banner {
+    display: flex;
+    /* height: 100%; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+}
+
+.hero-banner img {
+    margin-top: 3rem;
+    max-width: 50%;
+}
+
+.hero-text {
+    margin-top: 8rem;
+    /* width: 50%; */
+}
+
+.hero-text h1 {
+    font-size: 5rem;
+    color: white;
+    margin: 0;
+    /* padding: 0; */
+}
+
+.hero-text p {
+    color: white;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.hero-text button {
+    padding: 1.1rem 3rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #cf0063;
+    border: none;
+    border-radius: 3px;
+    transition: 0.3s ease-in;
+}
+
+.hero-text button:hover {
+    background-color: white;
+    color: gray;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1b1b1b;
+
+    padding-top: 6rem;
+    transition: 0.3s ease-in;
+}
+
+.about-section p {
+    color: #a8a8a8;
+}
+
+.about-section h2 {
+    color: white;
+    font-size: 2.5rem;
+    width: 50%;
+    text-align: center;
+}
+
+.about-section img {
+    width: 80%;
+}
+
+.features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 10rem;
+    transition: 0.3s ease-in;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1.5rem;
+}
+
+.feature-text {
+    width: 40%;
+    min-width: 200px;
+    margin: 1.5rem;
+}
+
+.feature-text p {
+    color: #a8a8a8;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.feature-text h3 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.feature img {
+    width: 40%;
+    min-width: 250px;
+}
+
+.benefits-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 6rem 4rem;
+    flex-wrap: wrap;
+    transition: 0.3s ease-in;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 25%;
+    min-width: 200px;
+    margin: 1.5rem;
+}
+
+.benefit img {
+    width: 15%;
+    align-self: center;
+}
+
+.benefit h4 {
+    font-size: 1.2rem;
+}
+
+.benefit p {
+    font-size: 1.1rem;
+    color: #a8a8a8;
+}
+
+.dark-mode .header-section {
+    background-image: linear-gradient(to bottom right, #414141, #1b1b1b);
+    transition: 0.3s ease-in-out;
+}
+
+.dark-mode .hero-text button {
+    background-color: #414141;
+    color: white;
+}
+
+.dark-mode .features-section {
+    transition: 0.3s ease-in;
+
+    background-color: #000000;
+}
+
+.dark-mode .feature-text p {
+    color: whitesmoke;
+}
+
+.dark-mode .feature-text h3 {
+    color: white;
+}
+
+.dark-mode .benefits-section {
+    background-color: #1b1b1b;
+}
+
+.dark-mode .benefits-section p {
+    color: whitesmoke;
+}
+
+.dark-mode .benefits-section h4 {
+    color: white;
+}
+
+@media screen and (min-width: 992px) {
+    .hero-text {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header ul li {
+        display: none;
+    }
+    .header ul span {
+        display: inline;
+        color: pink;
+    }
+    .hero-banner {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-banner img {
+        min-width: 20rem;
+    }
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 5rem;
+    }
+
+    .hero-text p {
+        font-size: 2rem;
+    }
+
+    .hero-text button {
+        margin: 0.8rem;
+    }
+
+    .feature {
+        text-align: center;
+    }
+
+    .features-section {
+        padding: 4rem;
+    }
+
+    .feature-text {
+        width: 100%;
+    }
+    .special .feature-text {
+        order: 1;
+    }
+    .special img {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    .hero-text p {
+        font-size: 1.5rem;
+    }
+}
